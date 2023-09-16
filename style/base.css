@@ -1,0 +1,107 @@
+
+body, h1, h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Your-Font-Name', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #0078d4; 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0078d4;
+
+    
+}
+
+header img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: white;
+}
+
+nav {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    display: block;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+
+footer {
+    background-color: #0078d4; 
+    padding: 20px;
+    text-align: center;
+    color: white; 
+}
+
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+}
