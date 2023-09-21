@@ -57,6 +57,7 @@ nav li {
 
 nav a {
     display: block;
+    color: black;
 }
 
 main {
@@ -104,4 +105,8 @@ footer {
     main {
         padding: 10px;
     }
+}
+
+.card1 a {
+    color: black;
 }
