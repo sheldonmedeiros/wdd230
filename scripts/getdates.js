@@ -20,3 +20,6 @@ function updateFooter() {
 
 document.getElementById("weather").textContent = "Partly Cloudy";
 document.getElementById("visits").textContent = "25";
+
+document.getElementById("currentyear").innerText = new Date().getFullYear();
+document.getElementById("lastModified").innerText = `Last Modified: ${document.lastModified}`
