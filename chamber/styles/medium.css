@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Add your medium-sized screen styles here */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #008f99;
+    }
+  
+    .navigation {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navigation.active {
+      display: flex; /* Show the navigation links when active (hamburger menu) */
+    }
+  
+    .navigation li {
+      margin: 1rem 0;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="North Shore Chamber of Commerce">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content= "http://127.0.0.1:5500/index.html">
+    <title>North Shore Chamber of Commerce</title>
+    <meta name="description" content="Home page for North Shore Chamber of Commerce">
+    <meta name="author" content=" Sheldon Lokahi Kanaloa Medeiros">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mulish&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/tree.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normailze.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+</head>
+<body>
+
+    <header>North Shore Chamber of Commerce</header>
+
+    <nav>
+
+        <div class="hamburger-icon" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href=>Weather</a></li>
+            <li><a href="chamber/" target="_blank">Community Events</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <section class="weather">
+            <h2>Weather</h2>
+            <p>Weather: <span id="weather">Sunny</span></p>
+            <p>Number of Visits: <span id="visits">10</span></p>
+        </section>
+
+        <section class="event">
+            <h2>Communtiy Events</h2>
+                <li>10/08/2023 Trunk or Treat</li>
+                <li>11/12/2023 Remeber the Veterans</li>
+                <li>11/20/2023 Pumpkin Eating contest</li>
+        </section>
+    </div>
+
+    <div class="container">
+        <p>Communtiy Spot lights</p>
+        <img src="images/shifaaz-shamoon-sLAk1guBG90-unsplash.jpg" alt="hero-image"></img>
+        <button class="btn">Join Now</button>
+    </div>
+
+    <div>
+        <section class="community">Community info and contacts</section>
+    </div>
+    
+</body>
+
+<footer>
+    <p>&#169; <span id="currentyear"></span> Sheldon Lokahi Kanaloa Medeiros USA </p>
+    <p id="lastModified"></p>
+</footer>
+
+<script src="scripts/scripts.js"></script>
+</html>
