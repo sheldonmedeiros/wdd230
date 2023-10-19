@@ -10,7 +10,15 @@ body {
     background-color: #f0f0f0;
     color: #333;
     line-height: 1.6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 700px auto ;
+}
+
 
 a {
     text-decoration: none;
@@ -26,8 +34,7 @@ header {
     text-align: center;
     padding: 20px;
     background-color: #0078d4;
-
-    
+    grid-column: 1 / 4;
 }
 
 header img {
@@ -45,6 +52,7 @@ nav {
     background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
+    grid-column: 1 / 4;
 }
 
 nav ul {
@@ -69,6 +77,8 @@ main {
 h2 {
     font-size: 1.3rem;
     margin-bottom: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 
@@ -79,20 +89,23 @@ h2 {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.card1{
-	width: 300px;
-  border: 15px solid rgb(13, 102, 175);
-  padding: 50px;
-  margin: 20px;
-  text-align: center;
+.card1 {
+    width: 300px;
+    border: 15px solid rgb(13, 102, 175);
+    padding: 50px;
+    margin: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
-.information{
+.information {
 	width: 300px;
-  border: 15px solid rgb(13, 102, 175);
-  padding: 50px;
-  margin: 20px;
-  text-align: center;
+    border: 15px solid rgb(13, 102, 175);
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 h3 {
@@ -116,17 +129,15 @@ footer {
     padding: 20px;
     text-align: center;
     color: white; 
-}
-
-
-@media (max-width: 600px) {
-    main {
-        padding: 10px;
-    }
+    grid-column: 1 / 4;
 }
 
 .card1 a {
     color: black;
+}
+
+.card1{
+    text-align: center;
 }
 
 
@@ -136,7 +147,7 @@ footer {
 	padding: 3px 7px 6px;
 	background-color: #eee;
 	color: #000;
- position: absolute;
+    position: absolute;
 	top: 1rem;
 	right: 1rem;
 }
@@ -183,7 +194,7 @@ footer {
 
 
 .active{
- background-color: #007bff;
+    background-color: #007bff;
     color: #fff;
     font-weight: bold;
 }
@@ -215,4 +226,40 @@ footer {
 	
 }
 
+.hero {
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
 
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:"Great Vibes", serif;
+}
+
+.map {
+    grid-column: 1 / 4
+}
