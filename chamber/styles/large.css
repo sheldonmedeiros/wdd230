@@ -1,6 +1,5 @@
-/* Styles for large-sized screens (1025px and above) */
 @media screen and (min-width: 1025px) {
-    /* Add your large-sized screen styles here */
+
     nav {
       display: grid;
       margin: 1rem auto;

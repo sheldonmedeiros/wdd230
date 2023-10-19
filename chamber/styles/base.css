@@ -118,7 +118,6 @@ p{
         content: "☰";
     }
   
-    /* Style for the navigation links when the hamburger menu is active */
     .navigation.active {
       display: flex;
       flex-direction: column;
