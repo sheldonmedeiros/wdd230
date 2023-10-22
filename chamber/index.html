@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="North Shore Chamber of Commerce">
-    <meta property="og:type" content="Website">
-    <meta property="og:image" content="">
-    <meta property="og:url" content= "http://127.0.0.1:5500/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dashboard.imgix.com/shifaaz-shamoon-sLAk1guBG90-unsplash.jpg">
+    <meta property="og:url" content= "https://sheldonmedeiros.github.io/wdd230/chamber/">
     <title>North Shore Chamber of Commerce</title>
-    <meta name="description" content="Home page for North Shore Chamber of Commerce">
+    <meta name="description" content="Home page for North Shore Chamber of Commerce. Where we bring small business together to have them get the support they need.">
     <meta name="author" content=" Sheldon Lokahi Kanaloa Medeiros">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mulish&display=swap" rel="stylesheet">
     <link rel="icon" href="images/tree.ico">
     
-    <link rel="stylesheet" href="styles/normailze.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -39,15 +39,18 @@
 
         <ul class="navigation">
             <li><a href="#">Home</a></li>
-            <li><a href="">Weather</a></li>
-            <li><a href="chamber/" target="_blank">Community Events</a></li>
-            <li><a href="https://www.byui.edu/" target="_blank">Contact Us</a></li>
+            <li><a href="#">Weather</a></li>
+            <li><a href="#" target="_blank">Community Events</a></li>
+            <li><a href="#" target="_blank">Contact Us</a></li>
         </ul>
     </nav>
 
     <div class="two-box">
         <section class="weather">
             <h2>Weather</h2>
+            <p>Temperature: <span id="temperature">30</span>°F</p>
+            <p>Wind Speed: <span id="windSpeed">6.9</span> mph</p>
+            <p id="windChill">Wind Chill: Calculating...</p>
             <p>Weather: <span id="weather">Sunny</span></p>
             <p>Number of Visits: <span id="visits">10</span></p>
         </section>
@@ -64,7 +67,11 @@
 
     <div class="container">
         <p>Communtiy Spot lights</p>
-        <img src="images/shifaaz-shamoon-sLAk1guBG90-unsplash.jpg" alt="hero-image">
+        <picture>
+            <source srcset="images/small-hero.webp" media="(max-width: 500px)">
+            <source srcset="images/medium-hero.webp" media="(max-width: 1000px)">
+            <img src="images/large-hero.webp" alt="table setting" width="1500" height="750">
+        </picture>
         <button class="btn">Join Now</button>
     </div>
 
@@ -79,6 +86,7 @@
     </footer>
     
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/windchill.js"></script>
 
 </body>
 
