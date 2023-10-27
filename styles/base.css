@@ -14,11 +14,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto 700px auto ;
-}
-
 
 a {
     text-decoration: none;
@@ -69,9 +64,11 @@ nav a {
 }
 
 main {
-    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     padding: 20px;
+    grid-column: 1 / 4;
 }
 
 h2 {
@@ -90,22 +87,18 @@ h2 {
 }
 
 .card1 {
-    width: 300px;
     border: 15px solid rgb(13, 102, 175);
-    padding: 50px;
-    margin: 20px;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    padding: 0;
+    margin: 0;
+    grid-column: 1 ;
 }
 
 .information {
-	width: 300px;
     border: 15px solid rgb(13, 102, 175);
-    padding: 50px;
-    margin: 20px;
+    padding: 0;
+    margin: 0;
     text-align: center;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column: 3 / 4;
 }
 
 h3 {
