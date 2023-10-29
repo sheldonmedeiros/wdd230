@@ -38,3 +38,26 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "🕶️";
 	}
 });
+
+
+const lastVisit = localStorage.getItem("lastVisit");
+
+if (!lastVisit) {
+    document.querySelector(".sidebar").textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    const currentTime = Date.now();
+    const daysSinceLastVisit = Math.floor((currentTime - lastVisit) / (1000 * 60 * 60 * 24));
+
+if (daysSinceLastVisit < 1) {
+    // Less than a day
+    document.querySelector(".sidebar").textContent = "Back so soon! Awesome!";
+} else {
+    // More than a day
+    const message = `You last visited ${daysSinceLastVisit} day${daysSinceLastVisit === 1 ? '' : 's'} ago.`;
+    document.querySelector(".sidebar").textContent = message;
+}
+}
+
+// Save the current visit date in localStorage
+localStorage.setItem("lastVisit", Date.now());
+
