@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Sheldon Medeiros WDD 230 Class">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.hawaiiprepworld.com/wp-content/uploads/2020/07/8BC15FEC-03C0-46D0-80F4-B6077156A869-e1595273055293.png">
+    <meta property="og:url" content= "https://sheldonmedeiros.github.io/wdd230/">
+    <title>Sheldon Medeiros - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Sheldon Lokahi Kanaloa Medeiros, course assignment portal">
+    <meta name="author" content=" Sheldon Lokahi Kanaloa Medeiros">
+    
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/base.css">
+    
+</head>
+<body>
+    <header>
+        <img src="images/profile-pic.webp" alt="Your Profile Image" width="150" height="150">
+        <h1>Sheldon Medeiros</h1>
+    </header>
+    
+    <nav>
+        <button id="menu">Press</button>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson-3/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/" target="_blank">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <form action="form.html" method="get">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9].{8,}"><br>
+
+            <label for="confirm_password">Password (Confirm):</label>
+            <input type="password" id="confirm_password" name="confirm_password" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"><br>
+
+            <label for="rating">Page Rating:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" list="rangevalues">
+            <output for="rating"></output>
+            <datalist id="rangevalues">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </main>
+    <div class="map"></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3707.7542538222488!2d-157.957598!3d21.673415!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c00501c61067b67%3A0x6384cfefbc147d5a!2s56-427%20Pahelehala%20Loop%2C%20Kahuku%2C%20HI%2096731!5e0!3m2!1sen!2sus!4v1695949576834!5m2!1sen!2sus" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Kahuku"></iframe>
+    </div>
+    <footer>
+        <p>&#169; <span id="currentyear"></span> Sheldon Lokahi Kanaloa Medeiros USA </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
+

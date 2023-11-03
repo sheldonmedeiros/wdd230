@@ -45,3 +45,26 @@ numVisits++;
 
 localStorage.setItem("numVisits-ls", numVisits);
 
+const password = document.querySelector("#keyphrase");
+const confirm_password = document.querySelector("#keyphrase2");
+const message = document.querySelector("#formmessage");
+
+confirm_password.addEventListener("focusout", checkSame);
+
+
+function checkPasswordMatch() {
+    const password = document.getElementById("password").value;
+    const passwordConfirm = document.getElementById("password-confirm").value;
+    
+    if (password !== passwordConfirm) {
+        alert("Passwords do not match. Please try again.");
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+        document.getElementById("password-confirm").value = "";
+    }
+}
+
+function updateRatingValue() {
+    const ratingValue = document.getElementById("page-rating").value;
+    document.getElementById("rating-value").textContent = ratingValue;
+}
