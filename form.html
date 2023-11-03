@@ -7,7 +7,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.hawaiiprepworld.com/wp-content/uploads/2020/07/8BC15FEC-03C0-46D0-80F4-B6077156A869-e1595273055293.png">
     <meta property="og:url" content= "https://sheldonmedeiros.github.io/wdd230/">
-    <title>Sheldon Medeiros - WDD 230 - Web Frontend Development</title>
+    <title>Sheldon Medeiros - WDD 230 - Forms</title>
     <meta name="description" content="WDD 230 - Web Frontend Development, Sheldon Lokahi Kanaloa Medeiros, course assignment portal">
     <meta name="author" content=" Sheldon Lokahi Kanaloa Medeiros">
     
@@ -35,19 +35,19 @@
     </nav>
     
     <main>
-        <form action="form.html" method="get">
+        <form action="record.html" method="get">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required><br>
-
+        
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9].{8,}"><br>
-
+        
             <label for="confirm_password">Password (Confirm):</label>
             <input type="password" id="confirm_password" name="confirm_password" required><br>
-
+        
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"><br>
-
+        
             <label for="rating">Page Rating:</label>
             <input type="range" id="rating" name="rating" min="1" max="10" step="1" list="rangevalues">
             <output for="rating"></output>
@@ -65,9 +65,8 @@
                 <option value="10">10</option>
             </datalist>
             <div class="ref"></div>
-
+        
             <button type="submit">Submit</button>
-
         </form>
     </main>
     <div class="map"></div>
