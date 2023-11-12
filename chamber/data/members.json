@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Laie Chop Suey",
+            "address": "123 Main St, City",
+            "phone": "123-456-7890",
+            "website": "https://www.company1.com",
+            "image": "company1.jpg",
+            "membershipLevel": "Gold",
+            "additionalInfo": "Some additional information about Company 1"
+        },
+        {
+            "name": "Angel's Ice Cream",
+            "address": "456 Oak St, Town",
+            "phone": "987-654-3210",
+            "website": "https://www.company2.com",
+            "image": "company2.jpg",
+            "membershipLevel": "Silver",
+            "additionalInfo": "Some additional information about Company 2"
+        },
+        {
+            "name": "Seven Brothers",
+            "address": "789 Pine St, Village",
+            "phone": "555-123-4567",
+            "website": "https://www.company3.com",
+            "image": "company3.jpg",
+            "membershipLevel": "Bronze",
+            "additionalInfo": "Some additional information about Company 3"
+        },
+        {
+            "name": "Foodland",
+            "address": "101 Cedar St, Hamlet",
+            "phone": "777-999-8888",
+            "website": "https://www.company4.com",
+            "image": "company4.jpg",
+            "membershipLevel": "Gold",
+            "additionalInfo": "Some additional information about Company 4"
+        },
+        {
+            "name": "L&L",
+            "address": "222 Maple St, County",
+            "phone": "333-444-5555",
+            "website": "https://www.company5.com",
+            "image": "company5.jpg",
+            "membershipLevel": "Silver",
+            "additionalInfo": "Some additional information about Company 5"
+        },
+        {
+            "name": "Marriot Hotel",
+            "address": "333 Elm St, Borough",
+            "phone": "666-777-8888",
+            "website": "https://www.company6.com",
+            "image": "company6.jpg",
+            "membershipLevel": "Bronze",
+            "additionalInfo": "Some additional information about Company 6"
+        },
+        {
+            "name": "Kens Fresh Fish",
+            "address": "444 Birch St, District",
+            "phone": "111-222-3333",
+            "website": "https://www.company7.com",
+            "image": "company7.jpg",
+            "membershipLevel": "Gold",
+            "additionalInfo": "Some additional information about Company 7"
+        }
+    ]
+}

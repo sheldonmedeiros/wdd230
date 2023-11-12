@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="North Shore Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dashboard.imgix.com/shifaaz-shamoon-sLAk1guBG90-unsplash.jpg">
+    <meta property="og:url" content= "https://sheldonmedeiros.github.io/wdd230/chamber">
+    <title>North Shore Chamber of Commerce</title>
+    <meta name="description" content="Home page for North Shore Chamber of Commerce. Where we bring small business together to have them get the support they need.">
+    <meta name="author" content=" Sheldon Lokahi Kanaloa Medeiros">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mulish&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/tree.ico">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+
+    <header>
+        <h1>North Shore Chamber of Commerce</h1>
+    </header>
+
+    <nav>
+
+        <div class="hamburger-icon" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Weather</a></li>
+            <li><a href="#" target="_blank">Community Events</a></li>
+            <li><a href="#" target="_blank">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="membership-form">
+            <form action="thankyou.html" method="get">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+    
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+    
+            <label for="position">Title/Position:</label>
+            <input type="text" id="position" name="position" required pattern="[A-Za-z\s\-]{7,}">
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@example.com">
+    
+            <label for="phone">Mobile Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="organization">Business/Organization Name:</label>
+            <input type="text" id="organization" name="organization" required>
+    
+            <label for="membershipLevel">Membership Level:</label>
+            <select id="membershipLevel" name="membershipLevel" required>
+                <option value="NP">Non-Profit Membership (Free)</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select>
+    
+            <label for="description">Business/Organization Description:</label>
+            <textarea id="description" name="description"></textarea>
+    
+            <input type="hidden" id="formTimestamp" name="formTimestamp">
+    
+            <button type="submit">Submit</button>
+        </form>
+        </section>
+    
+        <section class="membership-details">
+            <h2>Membership Benefits</h2>
+            <div class="membership-level">
+              <div class="membership-column">
+                <h3>Non-Profit Membership (Free)</h3>
+                <ul>
+                  <li>Access to Community Events</li>
+                  <li>Networking Opportunities</li>
+                  <li>Monthly Newsletters</li>
+                </ul>
+              </div>
+              <div class="membership-column">
+                <h3>Bronze Membership</h3>
+                <ul>
+                  <li>All Non-Profit Benefits</li>
+                  <li>Discounts on Chamber Services</li>
+                  <li>Listing in Business Directory</li>
+                  <li>Exclusive Webinars</li>
+                </ul>
+              </div>
+            </div>
+            <div class="membership-level">
+              <div class="membership-column">
+                <h3>Silver Membership</h3>
+                <ul>
+                  <li>All Bronze Benefits</li>
+                  <li>Featured on Chamber Website</li>
+                  <li>Priority Event Registration</li>
+                  <li>Quarterly Workshops</li>
+                </ul>
+              </div>
+              <div class="membership-column">
+                <h3>Gold Membership</h3>
+                    <ul>
+                        <li>All Silver Benefits</li>
+                        <li>Spotlight Position on Home Page</li>
+                        <li>Free Admission to Annual Gala</li>
+                        <li>Customized Advertising Opportunities</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Chamber of Commerce. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
