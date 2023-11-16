@@ -45,12 +45,6 @@ numVisits++;
 
 localStorage.setItem("numVisits-ls", numVisits);
 
-const password = document.querySelector("#keyphrase");
-const confirm_password = document.querySelector("#keyphrase2");
-const message = document.querySelector("#formmessage");
-
-confirm_password.addEventListener("focusout", checkSame);
-
 
 function checkPasswordMatch() {
     const password = document.getElementById("password").value;
@@ -68,3 +62,44 @@ function updateRatingValue() {
     const ratingValue = document.getElementById("page-rating").value;
     document.getElementById("rating-value").textContent = ratingValue;
 }
+
+//Weather for my homepage.
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
+
+const lat = 21.64;
+const lon = -157.93;
+const apiKey = 'b824e6d324073d6895e2fa9bd1af574a';
+
+
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+
+async function apiFetch() {
+    try {
+        console.log('hello')
+        const response = await fetch(url);
+        if (response.ok) {
+        const data = await response.json();
+        console.log(data); // testing only
+        displayResults(data); // uncomment when ready
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+function displayResults(data) {
+    tempNum = (data.main.temp).toFixed();
+    currentTemp.innerHTML = `${tempNum} &deg;F`
+    const iconscr = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    weatherIcon.setAttribute('src', iconscr)
+    weatherIcon.setAttribute('alt', `${data.weather[0].description} icon` )
+
+    captionDesc.textContent = data.weather[0].description;
+
+}
+
+apiFetch();

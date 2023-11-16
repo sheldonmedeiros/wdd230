@@ -47,38 +47,19 @@
 
         <h2>WDD 230: Web Frontend Development</h2>
         
-        <section class="card1">
+        <section class="card1 card">
             <h3>Learning Activities</h3>
-            <ul>
-                <li><a href="https://byui-cse.github.io/wdd230-course/lesson01/">Lesson01</a></li>
-                <li><a href="https://byui-cse.github.io/wdd230-course/lesson02/">Lesson02</a></li>
-                <li><a href="https://sheldonmedeiros.github.io/wdd230/lesson-2/design-principles.html">Design Principles</a></li>
-                <li><a href="https://byui-cse.github.io/wdd230-course/lesson03/">Lesson03</a></li>
-                <li><a href="images/Screenshot-2023-09-26-053821.png">CSS Combinators</a></li>
-                <li><a href="https://codepen.io/sheldonmedeiros/pen/mdaxNpb">CSS Psuedo Elements</a></li>
-                <li><a href="https://codepen.io/sheldonmedeiros/pen/gOZKgbx">Responsive Menu</a></li>
-                <li><a href="https://sheldonmedeiros.github.io/wdd230/lesson-3/chamber-site-plan.html">Chamber site plan</a></li>
-                <li><a href="https://codepen.io/sheldonmedeiros/pen/rNoqqBe">Lesson04</a>
-                <li><a href="https://sheldonmedeiros.github.io/wdd230/chamber/index.html">Start of chamber homepage</a></li>
-                <li><a href="https://sheldonmedeiros.github.io/wdd230/lesson-5/bom.html">Lesson05 DOM Manipulation</a></li>
-                <li><a href="#">Lesson06</a></li>
-                <li><a href="lesson-3/images/landscape.webp">WebP</a></li>
-                <li><a href="responsive-images.html">Responsive Images</a></li>
-                <li><a href="#">Lesson07</a></li>
-                <li><a href="#">Lesson08</a></li>
-                <li><a href="#">Lesson09</a></li>
-                <li><a href="#">Lesson10</a></li>
-                <li><a href="#">Lesson11</a></li>
-                <li><a href="#">Lesson12</a></li>
-                <li><a href="#">Lesson13</a></li>
-                <li><a href="#">Lesson14</a></li>
-
-            </ul>
+            <ul id="links"></ul>
         </section>
         
-        <section class="information">
+        <section class="information card">
             <h3>Information</h3>
-            <p>Weather: <span id="weather">Sunny</span></p>
+            <div><p>Weather: <span id="current-temp"></span></p>
+                <figure>
+                    <img src="" alt="" id="weather-icon">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
             <p>Number of Visits: <span class="visits">10</span></p>
         </section>
     </main>
@@ -91,6 +72,7 @@
     </footer>
 
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 </html>
 

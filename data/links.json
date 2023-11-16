@@ -4,7 +4,7 @@
         "lesson": "01",
         "links": [
           {
-            "url": "lesson01/holygrail.html",
+            "url": "lesson-1/holygrail.html",
             "title": "Holy Grail"
           },
           {
@@ -61,12 +61,12 @@
         "lesson": "06",
         "links": [
           {
-            "url": "lesson02/mediaquery.html",
-            "title": "Media Queries"
+            "url": "responsive-images.html",
+            "title": "Responsive Images"
           },
           {
-            "url": "lesson02/design-principles.html",
-            "title": "Design Principles Document"
+            "url": "lesson-3/images/landscape.webp",
+            "title": "Web P"
           }
         ]
       },
@@ -98,6 +98,15 @@
           {
             "url": "lesson-9/prophets.html",
             "title": "Prophet page"
+          }
+        ]
+      },
+      {
+        "lesson": "10",
+        "links": [
+          {
+            "url": "lesson-10/weather.html",
+            "title": "Weather API"
           }
         ]
       }

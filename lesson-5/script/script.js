@@ -18,7 +18,7 @@ button.addEventListener('click', () => {
         deleteButton.addEventListener('click', function () {
             list.removeChild(li);
             input.focus();
-          });
+        });
 
     }
 });
