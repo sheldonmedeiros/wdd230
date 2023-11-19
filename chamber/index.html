@@ -6,15 +6,16 @@
     <meta property="og:title" content="North Shore Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://dashboard.imgix.com/shifaaz-shamoon-sLAk1guBG90-unsplash.jpg">
-    <meta property="og:url" content= "https://sheldonmedeiros.github.io/wdd230/chamber">
+    <meta property="og:url" content="https://sheldonmedeiros.github.io/wdd230/chamber">
     <title>North Shore Chamber of Commerce</title>
-    <meta name="description" content="Home page for North Shore Chamber of Commerce. Where we bring small business together to have them get the support they need.">
-    <meta name="author" content=" Sheldon Lokahi Kanaloa Medeiros">
+    <meta name="description" content="Home page for North Shore Chamber of Commerce. Where we bring small businesses together to get the support they need.">
+    <meta name="author" content="Sheldon Lokahi Kanaloa Medeiros">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mulish&display=swap" rel="stylesheet">
     <link rel="icon" href="images/tree.ico">
-    
+
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -26,68 +27,71 @@
     </div>
 
     <header>
-        <h1>North Shore Chamber of Commerce</h1>
+        <div class="header-container">
+            <h1>North Shore Chamber of Commerce</h1>
+        </div>
     </header>
 
     <nav>
-
         <div class="hamburger-icon" onclick="toggleNav()">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
-
         <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Weather</a></li>
-            <li><a href="#" target="_blank">Community Events</a></li>
-            <li><a href="#" target="_blank">Contact Us</a></li>
+            <li><a href="https://sheldonmedeiros.github.io/wdd230/chamber/index.html">Home</a></li>
+            <li><a href="https://sheldonmedeiros.github.io/wdd230/chamber/discover.html">Discover</a></li>
+            <li><a href="https://sheldonmedeiros.github.io/wdd230/chamber/directory.html" target="_blank">Community Members</a></li>
+            <li><a href="https://sheldonmedeiros.github.io/wdd230/chamber/join.html" target="_blank">Join/Contact us</a></li>
         </ul>
     </nav>
+
+    <div class="meet-greet-banner" id="meetGreetBanner">
+        <div class="banner-content">
+            <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+            <button onclick="closeBanner()">Close</button>
+        </div>
+    </div>
 
     <div class="two-box">
         <section class="weather">
             <h2>Weather</h2>
-            <p>Temperature: <span id="temperature">30</span>°F</p>
+            <p>Temperature: <span id="temperature"></span></p>
             <p>Wind Speed: <span id="windSpeed">6.9</span> mph</p>
             <p id="windChill">Wind Chill: Calculating...</p>
-            <p>Weather: <span id="weather">Sunny</span></p>
+            <p>Weather: <span id="weatherDescription"></span></p>
             <p>Number of Visits: <span id="visits">10</span></p>
         </section>
 
         <section class="event">
-            <h2>Communtiy Events</h2>
+            <h2>Community Events</h2>
             <ul>
                 <li>10/08/2023 Trunk or Treat</li>
-                <li>11/12/2023 Remeber the Veterans</li>
-                <li>11/20/2023 Pumpkin Eating contest</li>
+                <li>11/12/2023 Remember the Veterans</li>
+                <li>11/20/2023 Pumpkin Eating Contest</li>
             </ul>
         </section>
     </div>
 
     <div class="container">
-        <p>Communtiy Spot lights</p>
+        <p><h1>Welcome to the Community!!</h1></p>
         <picture>
-            <source srcset="images/small-hero.webp" media="(max-width: 500px)">
-            <source srcset="images/medium-hero.webp" media="(max-width: 1000px)">
-            <img src="images/large-hero.webp" alt="table setting" width="1500" height="750">
+            <source srcset="images/small-home.webp" media="(max-width: 500px)">
+            <source srcset="images/medium-home.webp" media="(max-width: 1000px)">
+            <img src="images/home-page-large.webp" alt="table setting" width="1500" height="750">
         </picture>
-        <button class="btn">Join Now</button>
+        <button id="joinBtn" class="btn">Join Now</button>
     </div>
-
-    <div class="community">
-        <h2>Community info and contacts</h2>
-    </div>
-
 
     <footer>
-        <p>&#169; <span id="currentyear"></span> Sheldon Lokahi Kanaloa Medeiros USA </p>
-        <p id="lastModified"></p>
+        <div class="footer-container">
+            <p>&#169; <span id="currentyear"></span> Sheldon Lokahi Kanaloa Medeiros USA </p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
-    
+
     <script src="scripts/scripts.js"></script>
     <script src="scripts/windchill.js"></script>
-
+    <script src="scripts/weather.js"></script>
 </body>
-
 </html>
