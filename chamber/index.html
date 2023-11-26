@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <div id="mode">
@@ -80,13 +81,38 @@
             <source srcset="images/medium-home.webp" media="(max-width: 1000px)">
             <img src="images/home-page-large.webp" alt="table setting" width="1500" height="750">
         </picture>
-        <button id="joinBtn" class="btn">Join Now</button>
+        <button id="joinBtn" class="btn"><a href="https://sheldonmedeiros.github.io/wdd230/chamber/join.html">Join Now</a></button>
     </div>
 
-    <footer>
+    <footer class="footer">
         <div class="footer-container">
-            <p>&#169; <span id="currentyear"></span> Sheldon Lokahi Kanaloa Medeiros USA </p>
-            <p id="lastModified"></p>
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Class assingment</h4>
+                    <ul>
+                    <p>&#169; <span id="currentyear"></span> Sheldon Lokahi Kanaloa Medeiros USA </p>
+                    <p id="lastModified"></p>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="https://sheldonmedeiros.github.io/wdd230/chamber/directory.html">About Us</a></li>
+                        <li><a href="https://sheldonmedeiros.github.io/wdd230/chamber/discover.html">Our Services</a></li>
+                        <li><a href="https://sheldonmedeiros.github.io/wdd230/chamber/join.html">Join</a></li>
+                        <li><a href="https://sheldonmedeiros.github.io/wdd230/chamber/join.html">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                </div>
+            </div>
         </div>
     </footer>
 
