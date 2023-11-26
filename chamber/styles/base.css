@@ -141,6 +141,7 @@ p{
 .footer{
   background-color: #008f99;
   padding: 70px 0;
+  grid-column: 1 / 4;
 }
 
 .footer-col{
