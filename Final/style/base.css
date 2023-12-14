@@ -319,6 +319,8 @@ margin-top: 5%;
     margin-left: 20%;
 }
 
+
+
 .heading p{
     font-size: 0.938rem;
     font-weight: 300;
@@ -329,6 +331,7 @@ margin-top: 5%;
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 2rem;
+    margin-left: 50px;
 }
 
 .cars-container .box{
@@ -435,6 +438,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2em;
+    color: #fff;
 }
 
 .contactUs .title h2{
