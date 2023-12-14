@@ -378,8 +378,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #26284e;
-  }
-  
+}
+
 .container-res {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -387,41 +387,41 @@ body {
     max-width: 800px;
     margin: 20px auto;
     margin-top: 5%;
-  }
-  
+}
+
 .form-container {
     display: flex;
     flex-direction: column;
     color: #fff;
-  }
+}
 
-  .info-container{
+.info-container{
     color: #fff;
     padding: 2px;
 }
-  
-  label {
+
+label {
     margin-bottom: 5px;
-  }
-  
-  input,
-  select,
-  textarea {
+}
+
+input,
+select,
+textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     box-sizing: border-box;
-  }
-  
-  button {
+}
+
+button {
     padding: 10px;
     background-color: #4caf50;
     color: white;
     border: none;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #45a049;
 }
 
